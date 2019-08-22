@@ -431,7 +431,7 @@ const score = document.querySelector(".score")
 const options = document.querySelector(".options")
 
 
-const itemsQuiz = ['Excuse me, I"m trying to find the Green Hostel.', 'Przepraszam, próbuję znaleźć Green Hostel?', "How much are the tickets?", "Ile kosztują bilety?", "I would like to hire a car.", "Chciałbym wypożyczyć samochód.", "What time is it?", "Która jest godzina?"];
+const itemsQuiz = ["Excuse me, I'm trying to find the Green Hostel.", 'Przepraszam, próbuję znaleźć Green Hostel?', "How much are the tickets?", "Ile kosztują bilety?", "I would like to hire a car.", "Chciałbym wypożyczyć samochód.", "What time is it?", "Która jest godzina?"];
 
 
 
