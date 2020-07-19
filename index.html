@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <title>English for travel</title>
@@ -40,17 +41,17 @@
             <i class="last">Przepraszam, jak dostanę się do centrum miasta?</i>
         </ul>
         <form>
-            <div>
+            <div class="wrapper">
                 <label>Wpisz nowy zwrot: </label>
-                <textarea class=" areaAdd textOne" placeholder="Wpisz zwrot w języku angielskim!"></textarea>
-                <button class="add">Dodaj zwrot</button>
-                <button class="remove">Usuń zwrot</button>
+                <input class="areaAdd textOne form-control form-control-lg" type="text" placeholder="Wpisz zwrot w języku angielskim!">
+                <button class="btn btn-info btn btn-info btn btn-info add">Dodaj zwrot</button>
+                <button class="btn btn-info btn btn-info btn btn-info remove">Usuń zwrot</button>
             </div>
             <div>
                 <label>Wpisz tłumaczenie: </label>
-                <textarea class="textTranslate" placeholder="Wpisz polskie tłumaczenie"></textarea>
-                <button class="addTranslate">Dodaj tłumaczenie</button>
-                <button class="removeTranslate">Usuń tłumaczenie</button>
+                <input class="textTranslate areaAdd textOne form-control form-control-lg" type="text" placeholder="Wpisz polskie tłumaczenie!">
+                <button class="btn btn-info  addTranslate">Dodaj tłumaczenie</button>
+                <button class="btn btn-info removeTranslate">Usuń tłumaczenie</button>
             </div>
         </form>
     </div>
@@ -70,17 +71,17 @@
             <p><i>Czy jest zniżka na...?</i></p>
         </ul>
         <form class="secondform">
-            <div>
+            <div class="wrapper">
                 <label>Wpisz nowy zwrot: </label>
-                <textarea class="textOne areaSecond" placeholder="Wpisz zwrot w języku angielskim!"></textarea>
-                <button class="newitem">Dodaj zwrot</button>
-                <button class="removeitem">Usuń zwrot</button>
+                <input class="areaSecond form-control form-control-lg" type="text" placeholder="Wpisz zwrot w języku angielskim!">
+                <button class="btn btn-info newitem">Dodaj zwrot</button>
+                <button class="btn btn-info removeitem">Usuń zwrot</button>
             </div>
             <div>
                 <label>Wpisz tłumaczenie: </label>
-                <textarea class="textTranslate secondTranslate" placeholder="Wpisz polskie tłumaczenie"></textarea>
-                <button class="newtranslate">Dodaj tłumaczenie</button>
-                <button class="endtranslate">Usuń tłumaczenie</button>
+                <input class="textTranslate secondTranslate form-control form-control-lg" type="text" placeholder="Wpisz polskie tłumaczenie!">
+                <button class="btn btn-info newtranslate">Dodaj tłumaczenie</button>
+                <button class="btn btn-info endtranslate">Usuń tłumaczenie</button>
             </div>
         </form>
     </div>
@@ -99,17 +100,17 @@
             <p><i>Ma manualną czy automatyczną skrzynię biegów?</i></p>
         </ul>
         <form class="thirdForm">
-            <div>
+            <div class="wrapper">
                 <label>Wpisz nowy zwrot: </label>
-                <textarea class="textOne areaThird" placeholder="Wpisz zwrot w języku angielskim!"></textarea>
-                <button class="addthird">Dodaj zwrot</button>
-                <button class="removethird">Usuń zwrot</button>
+                <input class="textOne areaThird form-control form-control-lg" type="text" placeholder="Wpisz zwrot w języku angielskim!">
+                <button class="btn btn-info btn btn-info addthird">Dodaj zwrot</button>
+                <button class="btn btn-info btn btn-info removethird">Usuń zwrot</button>
             </div>
             <div>
                 <label>Wpisz tłumaczenie: </label>
-                <textarea class="textTranslate translateThird" placeholder="Wpisz polskie tłumaczenie"></textarea>
-                <button class="addtranslatethird">Dodaj tłumaczenie</button>
-                <button class="removetranslatethird">Usuń tłumaczenie</button>
+                <input class="textTranslate translateThird form-control form-control-lg" type="text" placeholder="Wpisz polskie tłumaczenie!">
+                <button class="btn btn-info btn btn-info addtranslatethird">Dodaj tłumaczenie</button>
+                <button class="btn btn-info btn btn-info removetranslatethird">Usuń tłumaczenie</button>
             </div>
         </form>
     </div>
@@ -130,17 +131,17 @@
             <p><i>Mój zegarek się spieszy.</i></p>
         </ul>
         <form class="fourthForm">
-            <div>
+            <div class="wrapper">
                 <label>Wpisz nowy zwrot: </label>
-                <textarea class="textOne areaFourth" placeholder="Wpisz zwrot w języku angielskim!"></textarea>
-                <button class="addfourth">Dodaj zwrot</button>
-                <button class="removefourth">Usuń zwrot</button>
+                <input class="textOne areaFourth form-control form-control-lg" type="text" placeholder="Wpisz zwrot w języku angielskim!">
+                <button class="btn btn-info addfourth">Dodaj zwrot</button>
+                <button class="btn btn-info removefourth">Usuń zwrot</button>
             </div>
             <div>
                 <label>Wpisz tłumaczenie: </label>
-                <textarea class="textTranslate translateFourth" placeholder="Wpisz polskie tłumaczenie"></textarea>
-                <button class="addtranslatefourth">Dodaj tłumaczenie</button>
-                <button class="removetranslatefourth">Usuń tłumaczenie</button>
+                <input class="textTranslate translateFourth form-control form-control-lg" type="text" placeholder="Wpisz polskie tłumaczenie!">
+                <button class="btn btn-info addtranslatefourth">Dodaj tłumaczenie</button>
+                <button class="btn btn-info removetranslatefourth">Usuń tłumaczenie</button>
             </div>
         </form>
     </div>
@@ -150,16 +151,19 @@
     </div>
 
     <div class="tip six">
-        <button class="random">Losuj zwrot</button>
+        <button class="btn btn-info random">Losuj zwrot</button>
         <span class="options"></span>
         <p class="sentence">Przetłumacz zwrot</p>
-        <textarea class="answear" placeholder="Wpisz tłumaczenie"></textarea>
+        <input class="answear form-control form-control-lg" type="text" placeholder="Wpisz polskie tłumaczenie!">
         <div class="wrapperspan">
             <span class="choice"></span>
         </div>
-        <button type="button" class="results score">Sprawdź</button>
+        <button type="button" class="btn btn-info results score">Sprawdź</button>
     </div>
     <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 
 </html>

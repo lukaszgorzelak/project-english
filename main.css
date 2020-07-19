@@ -3,17 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', 'Georgia', 'Times New Roman', 'Times', sans-serif;
-
 }
 
 .header {
-    display: flex;
 
+    display: flex;
+    min-width: 1000px;
 }
 
 .logo {
+    /* position: fixed; */
     display: flex;
-    position: relative;
     justify-content: center;
     width: 100%;
     height: 100px;
@@ -38,8 +38,6 @@
     border-bottom: 5px solid white;
     vertical-align: center;
     transition: 1s;
-
-
 }
 
 .hamburger::after {
@@ -52,10 +50,7 @@
     transform: translateY(12px);
 }
 
-
-
 .menu {
-
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -65,12 +60,10 @@
     background-color: #005454;
     display: none;
     transform: translateX(-50px);
-
 }
 
 .menulist {
     display: flex;
-
 }
 
 .menu:hover {
@@ -86,25 +79,25 @@
     transition: 0.5s;
 }
 
-.sublist:hover {
+.sublist:hover{
     width: 100%;
     height: 100px;
     background-color: #005454;
     transition: 0.5s;
 }
 
-a {
+a{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
 }
 
-a:hover {
+a:hover{
     color: aqua;
 }
 
 
-#wrapper {
+#wrapper{
     /* min-height: 500px; */
     /* min-width: 200px; */
     display: flex;
@@ -112,10 +105,9 @@ a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
-
 }
 
-.tip {
+.tip{
     /* min-height: 600px; */
     display: flex;
     align-items: center;
@@ -126,23 +118,21 @@ a:hover {
     color: #fff;
     font-weight: bold;
     border-bottom: 2px solid #1A2324;
-
 }
 
-ul {
+ul{
     display: none;
     background-color: aquamarine;
-
 }
 
-
-li {
+li{
     margin: 10px;
     color: white;
     list-style-type: none;
     margin-left: 55px;
     background-color: #005454;
     padding: 5px;
+    border-radius: 4px;
 }
 
 .develop {
@@ -150,7 +140,7 @@ li {
     flex-direction: column;
 }
 
-i {
+i{
     margin-left: 55px;
     color: #005454;
 }
@@ -188,7 +178,7 @@ form {
     align-items: center;
     flex-wrap: wrap;
     background-color: aquamarine;
-    /* padding: 25px; */
+    margin-top: -16px;
 }
 
 button {
@@ -200,6 +190,29 @@ button {
     padding: 5px;
 }
 
+.alert{
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    transform: translateY(-150px);
+}
+
+.close{
+  margin-right: -100px;
+}
+
+.form-control-lg{
+    background-color: #005454;
+    margin-bottom: 5px;
+}
+
+.answear{
+    width: 500px;
+}
+
+.wrapper{
+    margin-right: 5px;
+}
 /* input */
 textarea {
     display: block;
@@ -208,7 +221,6 @@ textarea {
     background-color: #005454;
     color: #fff;
     margin: 5px;
-
 }
 
 label {
@@ -230,6 +242,7 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: 300px;
 }
 
 .options {
@@ -243,6 +256,7 @@ label {
     background-color: #005454;
     text-align: center;
     border: 1px solid #1A2324;
+    border-radius: 4px;
 }
 
 ::placeholder {
@@ -271,8 +285,6 @@ label {
     background-color: aquamarine;
 }
 
-
-
 .lasttranslate {
     margin-left: 55px;
     color: #005454;
@@ -288,7 +300,6 @@ label {
 
     .title {
         font-size: 20px;
-
     }
 
     p {
@@ -296,7 +307,6 @@ label {
     }
 
     .hamburger {
-
         transform: translateX(-650px);
         width: 40px;
     }
@@ -327,8 +337,6 @@ label {
         margin-left: 0px;
     }
 
-
-
     ul {
         width: 100%;
         height: 700px;
@@ -349,22 +357,18 @@ label {
 
 @media (min-width: 521px) and (max-width: 1200px) {
 
-
     .hamburger {
         left: -350px;
-
     }
 
     .hamburger:hover {
         transform: rotate(180deg) scale(0.5);
         transition: 1s;
-
     }
 
     .sublist {
         justify-content: center;
         width: 100%;
-
     }
 
     .menu {
@@ -378,12 +382,10 @@ label {
         width: 98%;
     }
 
-
     button {
         margin-top: 5px;
         margin-bottom: 10px;
         margin-left: 0px;
-
     }
 
     label {
@@ -414,6 +416,5 @@ label {
     .hamburger:hover {
         transform: rotate(180deg) scale(0.5);
         transition: 1s;
-
     }
 }

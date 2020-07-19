@@ -1,11 +1,13 @@
 // const wrapper = document.querySelector("wrapper")
 // const divall = document.querySelectorAll("div")
-const div = document.querySelectorAll("div .tip")
-const one = document.querySelector("div .one")
-
-const ul = document.querySelector('ul')
-const li = document.querySelectorAll('li')
-const h1 = document.querySelectorAll('h1')
+const div = document.querySelectorAll("div .tip");
+const one = document.querySelector("div .one");
+const ul = document.querySelector('ul');
+const ulSecond = document.querySelector('ul.second');
+const ulThird = document.querySelector('ul.thirdUl');
+const ulfourth = document.querySelector('ul.fourthUl');
+const li = document.querySelectorAll('li');
+const h1 = document.querySelectorAll('h1');
 const input = document.querySelector('input');
 const form = document.querySelector("form")
 
@@ -34,7 +36,14 @@ const addWords = (e) => {
     e.preventDefault();
 
     if (!textOne.value) {
-        alert("Wpisz nowy zwrot")
+        const alertDiv = document.createElement("div");
+        alertDiv.innerHTML = `<div class="alert alert-danger alert-dismissible fade show">
+        <p>Wpisz nowy zwrot</p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>`;
+        ul.appendChild(alertDiv);
 
     } else if (textOne.value) {
         const newWord = document.createElement("li")
@@ -68,9 +77,16 @@ const writing = document.querySelector(".writing");
 const addtranslateSpn = (e) => {
 
     e.preventDefault();
-    console.log("działa");
+  
     if (!txtTranslate.value) {
-        alert("Wpisz tłumaczenie")
+        const alertDiv = document.createElement("div");
+        alertDiv.innerHTML = `<div class="alert alert-danger alert-dismissible fade show">
+       <p>Dodaj tłumaczenie</p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>`;
+        ul.appendChild(alertDiv);
 
     }
     if (txtTranslate.value) {
@@ -79,7 +95,6 @@ const addtranslateSpn = (e) => {
         spn.classList.add("lasttranslate");
         ul.appendChild(spn);
         txtTranslate.value = "";
-
     }
 }
 btnaddTranslate.addEventListener("click", addtranslateSpn)
@@ -131,7 +146,14 @@ const addElement = (e) => {
     e.preventDefault();
 
     if (!areaSecond.value) {
-        alert("Wpisz nowy zwrot")
+        const alertDiv = document.createElement("div");
+        alertDiv.innerHTML = `<div class="alert alert-danger alert-dismissible fade show">
+       <p>Dodaj nowy zwrot</p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>`;
+        ulSecond.appendChild(alertDiv);
     }
 
     if (areaSecond.value) {
@@ -167,7 +189,14 @@ const addTranslate = (e) => {
     e.preventDefault();
 
     if (!secondTranslate.value) {
-        alert("Wpisz tłumaczenie")
+        const alertDiv = document.createElement("div");
+        alertDiv.innerHTML = `<div class="alert alert-danger alert-dismissible fade show">
+       <p>Dodaj tłumaczenie</p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>`;
+      ulSecond.appendChild(alertDiv);
 
     } else if (secondTranslate.value) {
         const addli = document.createElement("li")
@@ -225,7 +254,14 @@ const textThird = (e) => {
     e.preventDefault();
 
     if (!areaThird.value) {
-        alert("Wpisz nowy zwrot")
+        const alertDiv = document.createElement("div");
+        alertDiv.innerHTML = `<div class="alert alert-danger alert-dismissible fade show">
+       <p>Dodaj nowy zwrot</p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>`;
+      ulThird.appendChild(alertDiv);
     }
 
     if (areaThird.value) {
@@ -259,7 +295,14 @@ const addTranslateThird = (e) => {
     e.preventDefault();
 
     if (!translateThird.value) {
-        alert("Wpisz tłumaczenie")
+        const alertDiv = document.createElement("div");
+        alertDiv.innerHTML = `<div class="alert alert-danger alert-dismissible fade show">
+       <p>Dodaj tłumaczenie</p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>`;
+      ulThird.appendChild(alertDiv);
 
     } else if (translateThird.value) {
         const addli = document.createElement("li")
@@ -316,7 +359,14 @@ const textFourth = (e) => {
     e.preventDefault();
 
     if (!areaFourth.value) {
-        alert("Wpisz nowy zwrot")
+        const alertDiv = document.createElement("div");
+        alertDiv.innerHTML = `<div class="alert alert-danger alert-dismissible fade show">
+       <p>Dodaj nowy zwrot</p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>`;
+      ulfourth.appendChild(alertDiv);
     }
 
     if (areaFourth.value) {
@@ -344,7 +394,14 @@ const addTranslateFourth = (e) => {
     e.preventDefault();
 
     if (!translateFourth.value) {
-        alert("Wpisz tłumaczenie")
+        const alertDiv = document.createElement("div");
+        alertDiv.innerHTML = `<div class="alert alert-danger alert-dismissible fade show">
+       <p>Dodaj tłumaczenie</p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>`;
+      ulfourth.appendChild(alertDiv);
 
     } else if (translateFourth.value) {
         const addli = document.createElement("li")
