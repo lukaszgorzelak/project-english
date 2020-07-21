@@ -55,11 +55,11 @@
     justify-content: space-around;
     align-items: center;
     color: #fff;
-    width: 1400px;
+    width: 100vw;
     height: 100vh;
     background-color: #005454;
     display: none;
-    transform: translateX(-50px);
+/*     transform: translateX(-50px); */
 }
 
 .menulist {
